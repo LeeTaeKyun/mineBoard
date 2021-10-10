@@ -44,13 +44,13 @@ function getMineCount(row, col){
   
 	if(isMine(row-1, col-1))mineCnt++;
 	if(isMine(row-1, col))mineCnt++;
-  if(isMine(row-1, col+1))mineCnt++;
-  if(isMine(row, col-1))mineCnt++;
+	if(isMine(row-1, col+1))mineCnt++;
+	if(isMine(row, col-1))mineCnt++;
 	if(isMine(row, col+1))mineCnt++;
 	if(isMine(row+1, col-1))mineCnt++;
 	if(isMine(row+1, col))mineCnt++;
-  if(isMine(row+1, col+1))mineCnt++;
-    
+	if(isMine(row+1, col+1))mineCnt++;
+
     return mineCnt;
 }
 
